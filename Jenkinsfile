@@ -17,17 +17,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                sh './output'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'deploy'
-            }
-        }
     }
 
     post {
